@@ -1,0 +1,31 @@
+{
+  "name": "timer_air_conditioner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielaGSantos/timer_air_conditioner.git"
+  },
+  "keywords": [
+    "Air",
+    "Conditioner",
+    "Node.js",
+    "Arduino"
+  ],
+  "author": "Gabriela Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GabrielaGSantos/timer_air_conditioner/issues"
+  },
+  "homepage": "https://github.com/GabrielaGSantos/timer_air_conditioner#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "johnny-five": "^0.11.3",
+    "moment": "^2.18.1",
+    "pug": "^2.0.0-rc.2"
+  }
+}
