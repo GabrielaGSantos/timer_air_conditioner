@@ -1,12 +1,33 @@
 var pug = require('pug')
+var moment = require('moment')
 
 module.exports = {
     initializeRoutes: function(app) {
         app.set("view engine", "pug")
         app.get("/", function(req, res) {
             res.render("index", {
-                variavel: "teste",
-                teste: false
+                activated: "info",
+                horaServidor: moment()
+            })
+        })
+        app.get("/config", function(req, res) {
+            res.render("config", {
+                activated: "config"
+            })
+        })
+        app.get("/ligar", function(req, res) {
+            res.render("ligar", {
+                activated: "ligar"
+            })
+        })
+        app.get("/desligar", function(req, res) {
+            res.render("desligar", {
+                activated: "desligar"
+            })
+        })
+        app.get("/travar", function(req, res) {
+            res.render("travar", {
+                activated: "travar"
             })
         })
         app.get('*', (req, res) => {

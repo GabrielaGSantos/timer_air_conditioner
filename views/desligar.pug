@@ -1,28 +1,32 @@
 doctype html
 
-html   
+html
+    //center
+        h1 Controle Led Arduino
+        
+        h4 GPIO 13 
+            button(style="color:green")#on ON
+            button(style="color:red")#off OFF
             
 body
     #page-wrapper
         #main-wrapper
             center
-                h1 Controle Remoto de Energia
+                h1 Controle Led Arduino   
         table
             td           
                 include ./barraLateral.pug
             td  
-                .tabcontent                    
-                    #data
-                    div
-                        #relogio
-                        p(style="display: none", id="horaServidor")= horaServidor
+                .tabcontent
+                    center
+                        h2 Bloqueio Temporário da Energia Elétrica
+
 
             
 
-                   
+
+                    
 script(src="https://code.jquery.com/jquery-1.10.2.js")
-script(src='/js/moment.js')
-script(src='/js/relogio.js')
 script(src="/js/ledControl.js")
 style
     include ../public/less/main.css                   

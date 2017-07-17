@@ -1,0 +1,72 @@
+doctype html
+
+html
+    //center
+        h1 Controle Led Arduino
+        
+        h4 GPIO 13 
+            button(style="color:green")#on ON
+            button(style="color:red")#off OFF
+            
+body
+    #page-wrapper
+        #main-wrapper
+            center
+                h1 Controle Led Arduino   
+        table
+            td           
+                include ./barraLateral.pug
+            td  
+                .tabcontent
+                    center
+                        h2 Configurações Gerais
+                        br 
+                        br
+                        br
+                        table(style="width: 100%") 
+                            tr 
+                                th(style="width: 40%") Início
+                                th(style="width: 40%") Final
+                            tr
+                                td(style="text-align: center") 
+                                    select#hora(name="hora")
+                                        option(value="") Hora
+                                        - var n=0;
+                                        while n<24
+                                            option(value=n)= n
+                                            -n++
+                                    select#minuto(name="minuto")
+                                        option(value="") Minuto
+                                        - var n=0;
+                                        while n<60
+                                            option(value=n)= n
+                                            -n++
+                                td(style="text-align: center") 
+                                    select#hora(name="hora")
+                                        option(value="") Hora
+                                        - var n=0;
+                                        while n<24
+                                            option(value=n)= n
+                                            -n++
+                                    select#minuto(name="minuto")
+                                        option(value="") Minuto
+                                        - var n=0;
+                                        while n<60
+                                            option(value=n)= n
+                                            -n++
+
+                        button#envio Salvar Configurações
+
+
+
+            
+
+
+                    
+script(src="https://code.jquery.com/jquery-1.10.2.js")
+script(src="/js/ledControl.js")
+style
+    include ../public/less/main.css
+    include ../public/less/select.css                    
+    include ../public/vendor/font-awesome-4.7.0/css/font-awesome.min.css
+    //link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
