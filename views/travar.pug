@@ -12,23 +12,25 @@ body
     #page-wrapper
         #main-wrapper
             center
-                h1 Controle Led Arduino   
+                h1 Controle Remoto de Energia   
         table
             td           
                 include ./barraLateral.pug
             td  
                 .tabcontent
                     center
-                        h2 Bloqueio Periódico da Energia Elétrica
-
-
+                        h2 Bloqueio da Energia Elétrica
+                        .switch-hole
+                            .switch
             
 
 
                     
 script(src="https://code.jquery.com/jquery-1.10.2.js")
-script(src="/js/ledControl.js")
+script(src="/js/switch.js")
 style
-    include ../public/less/main.css                   
+    include ../public/less/main.css 
+    include ../public/less/switch.css                  
     include ../public/vendor/font-awesome-4.7.0/css/font-awesome.min.css
     //link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:300")

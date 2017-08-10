@@ -12,7 +12,7 @@ body
     #page-wrapper
         #main-wrapper
             center
-                h1 Controle Led Arduino   
+                h1 Controle Remoto de Energia   
         table
             td           
                 include ./barraLateral.pug
@@ -20,7 +20,15 @@ body
                 .tabcontent
                     center
                         h2 Bloqueio Temporário da Energia Elétrica
-
+                        #buttons
+                            a.btn.orange(href="#") 1 Hora
+                            a.btn.yellow(href="#") 2 Horas
+                            a.btn.red(href="#") 3 Horas
+                            a.btn.purple(href="#") 6 Horas
+                            a.btn.blue(href="#") 12 Horas
+                            br
+                            br
+                            a.btn.green(href="#") Salvar Configurações
 
             
 
@@ -29,6 +37,7 @@ body
 script(src="https://code.jquery.com/jquery-1.10.2.js")
 script(src="/js/ledControl.js")
 style
-    include ../public/less/main.css                   
+    include ../public/less/main.css
+    include ../public/less/buttons.css                   
     include ../public/vendor/font-awesome-4.7.0/css/font-awesome.min.css
     //link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")

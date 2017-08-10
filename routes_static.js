@@ -1,5 +1,6 @@
 var pug = require('pug')
 var moment = require('moment')
+var routes_post = require('./nodeMCU/routes_post')
 
 module.exports = {
     initializeRoutes: function(app) {
@@ -30,8 +31,12 @@ module.exports = {
                 activated: "travar"
             })
         })
+
+        routes_post.setApp(app);
+
         app.get('*', (req, res) => {
             res.sendFile(__dirname + '/public/' + req.params[0]);
         });
+
     }
 }

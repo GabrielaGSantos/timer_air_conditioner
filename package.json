@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/GabrielaGSantos/timer_air_conditioner#readme",
   "dependencies": {
+    "etherport-client": "^0.1.3",
     "express": "^4.15.3",
     "johnny-five": "^0.11.3",
     "moment": "^2.18.1",

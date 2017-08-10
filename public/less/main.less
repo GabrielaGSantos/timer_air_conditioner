@@ -32,7 +32,7 @@ body {
 	border: 0;
 	font: inherit;
     vertical-align: baseline;    
-    background: #FFF;
+    background: #F7F3FF;
     font-family: @fontTitulo;
     font-size: 20px;
 }
@@ -189,7 +189,6 @@ body {
 
 //main
 #main-wrapper {
-    //background: #ED786A;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -239,7 +238,7 @@ body {
 	border: 1px solid #E8E8E6;
 	width: 85vw;
 	border-left: none;
-    height: 504px;
+    height: 510px;
     background: #E8E8E6;
     text-shadow: 5px 5px 5px rbga(0,0,0,0.5);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
@@ -267,24 +266,33 @@ body {
 
 #hora{    
     margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
+    padding: 15px 25px;
+	text-align: center;	
+	border-radius: 5px;
+	font-size: 22px;
+	text-decoration: none;
+	margin: 20px;
+	position: relative;
+	display: inline-block;
+	background-color: #55acee;
+	&:hover {
+		background-color: #6FC6FF;
+	}
 }
 
 #minuto{
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
+     margin: 10px;
+    padding: 15px 25px;
+	text-align: center;	
+	border-radius: 5px;
+	font-size: 22px;
+	text-decoration: none;
+	margin: 20px;
+	position: relative;
+	display: inline-block;
+	background-color: #55acee;
+	&:hover {
+		background-color: #6FC6FF;
+	}
 }
 
-#envio{
-    background: @background_color_3;
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
-    color: #FFF;
-    margin-top: 100px;
-}

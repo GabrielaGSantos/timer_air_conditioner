@@ -1,0 +1,23 @@
+.switch {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: white;
+  position: relative;
+  top: 3px;
+  left: 3px;
+  transition: left ease-in-out 200ms;
+}
+.switch-hole {
+  width: 120px;
+  height: 56px;
+  margin: 100px;
+  border-radius: 28px;
+  background: #ccc;
+}
+.switch.active {
+  left: 30px;
+}
+.switch-hole.active {
+  background: #e74c3c;
+}
